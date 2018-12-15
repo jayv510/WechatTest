@@ -9,6 +9,7 @@ Page({
     items: [
       {
         name: 'Padthai',
+        nameChinese: '泰式炒河粉',
         price: '8',
         description: 'Shrimp Rice Noodles',
         orderno: 0

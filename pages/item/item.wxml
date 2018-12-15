@@ -5,12 +5,17 @@
     <view class= "{{ix == activeCardId ? 'card-active' : 'card' }} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}">
 
       <block wx:if="{{ix != activeCardId}}">
+        <view class= "menu-name-chinese">{{item.nameChinese}}</view>
         <view class= "menu-name">{{item.name}}</view>
-        <view class= "menu-price">{{item.price}}</view>
+        <view class= "menu-price">{{item.price}}元/个</view>
+        <block wx:if= "{{item.orderno != 0}}">
+        <view class= "menu-orderno-main">{{item.orderno}} </view>
+        </block>
         <view class= "iconfont icon-arrowdown-copy"></view>
       </block>
 
       <block wx:elif="{{ix == activeCardId}}">
+        <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
         <view class= "menu-name-active">{{item.name}}</view>
         <view class= "menu-price-active">{{item.price}}</view>
         <view class= "menu-description">{{item.description}}</view>

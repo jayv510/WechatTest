@@ -6,67 +6,89 @@
   flex-direction: column;
 }
 .card {
-  border-bottom: 0.5px solid #b2b2b2;
-  margin: 0 10px 10px 10px;
-  border-left: 7px solid rgba(247, 168, 68, 0.6);
-  padding-left: 20px;
+  border-bottom: 1rpx solid #b2b2b2;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-left: 16rpx solid rgba(247, 168, 68, 0.6);
+  padding-left: 40rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 180rpx;
   color: #353535;
-  font-size: 16px;
+  font-size: 32rpx;
   transition-duration: 0.2s;
 }
 
 .card-active {
-  border-left: 7px solid rgba(247, 168, 68, 0.95);
-  border-bottom: 0.5px solid #b2b2b2;
-  margin: 0 10px 10px 10px;
-  padding-left: 20px;
+  border-left: 16rpx solid rgba(247, 168, 68, 0.95);
+  border-bottom: 1rpx solid #b2b2b2;
+  margin: 0 20rpx 20rpx 20rpx;
+  padding-left: 40rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60vh;
   color: #353535;
-  font-size: 16px;
+  font-size: 32rpx;
   transition-duration: 0.2s;
 }
 
 .menu-price {
-  padding: 0 20px;
+  padding: 0 40rpx;
   pointer-events: none;
 }
 
 .menu-name {
-  padding-right: 20px;
+  padding-right: 40rpx;
   pointer-events: none;
+  font-size: 26rpx;
+}
+
+.menu-name-chinese {
+  padding-right: 40rpx;
+  pointer-events: none;
+  font-size: 36rpx;
 }
 
 .menu-price-active {
-  padding: 0 20px;
+  padding: 0 40rpx;
   pointer-events: none;
 }
 
 .menu-name-active {
-  padding-right: 20px;
+  padding-right: 40rpx;
   font-weight: bold;
-  top: 10px;
-  left: 30px;
+  top: 20rpx;
+  left: 60rpx;
   pointer-events: none;
 }
 
 .icon-minus2 {
-  font-size: 30px;
-  padding: 10px;
+  font-size: 60rpx;
+  padding: 20rpx;
 }
 
 .icon-plus {
-  font-size: 30px;
-  padding: 10px;
+  font-size: 60rpx;
+  padding: 20rpx;
+}
+
+.icon-arrowdown-copy {
+  pointer-events: none;
 }
 
 .green-border {
-  border-left: 7px solid green;
+  border-left: 16rpx solid rgba(81, 187, 123, 1);
   }
   
+.menu-orderno-main {
+  background-color: rgba(81, 187, 123, 1);
+  padding: 10rpx;
+  color: white;
+  margin: 0;
+  border-radius: 100%;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  font: 32rpx Arial, sans-serif;
+}
