@@ -1,0 +1,72 @@
+/* pages/menu/menu.wxss */
+.container {
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  flex-direction: column;
+}
+.card {
+  border-bottom: 0.5px solid #b2b2b2;
+  margin: 0 10px 10px 10px;
+  border-left: 7px solid rgba(247, 168, 68, 0.6);
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  color: #353535;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.card-active {
+  border-left: 7px solid rgba(247, 168, 68, 0.95);
+  border-bottom: 0.5px solid #b2b2b2;
+  margin: 0 10px 10px 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  color: #353535;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.menu-price {
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.menu-name {
+  padding-right: 20px;
+  pointer-events: none;
+}
+
+.menu-price-active {
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.menu-name-active {
+  padding-right: 20px;
+  font-weight: bold;
+  top: 10px;
+  left: 30px;
+  pointer-events: none;
+}
+
+.icon-minus2 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.icon-plus {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.green-border {
+  border-left: 7px solid green;
+  }
+  

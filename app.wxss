@@ -1,0 +1,56 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1544615447057'); /* IE9*/
+  src: url('iconfont.eot?t=1544615447057#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAkUAAsAAAAADewAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8hlTyY21hcAAAAYAAAADCAAACeNHddhxnbHlmAAACRAAABGUAAAY0TjuLUWhlYWQAAAasAAAALwAAADYVpnIraGhlYQAABtwAAAAgAAAAJAn4BaZobXR4AAAG/AAAABYAAAA4Oh4AAGxvY2EAAAcUAAAAHgAAAB4I6gcUbWF4cAAABzQAAAAfAAAAIAEdAGNuYW1lAAAHVAAAAUUAAAJtPlT+fXBvc3QAAAicAAAAeAAAAKOKkdn4eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkUWecwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGBye8X+6wdzwv4EhhrmRoREozAiSAwD8EQz/eJzlkrERgzAMRb8DIQmBSwbIHQUFDczBBAzAWpkhc6TKAFSUMhQ0LEC+UFpYIPI931k+y7r/BeAIICAlCQH3gYPGm1m35gPEaz7Ek+cH7swkcpNMcimk8c63vh+qMR7LqZ67ZQH2bzfDsfrWAg448eeI3VzZtWM/Z1yQIOXDaKfqv0Sy7q/fKVUXDCoHyQxqCMkN9V0Kg7pCGkP99s6g1vCtobPie0NnY6gMnZsxNugJxtKgO5hqQ7ubOwPpF0oWSAcAAHiclVRNTBtXEH7znneN8Q9evOx6a8CsjdfBBlc1rjcQ7FACAoPDT81PBRKVIgREaisltKckjdtyzYFIRE0jJVWjSihU9FARNVXUxj1U9FK1QoBCD7lQqcoNqYdWhU1n17Sp0ku6fjsz783svG++9zwECD5sFVaJkxCfmpREPqyGtFS6yEi1olQfmhJWlUYFB4Za8XQHNgnFiRqFJljbAfoT+a9PpjvGqzizfLjyZIuNsxniIiFCIgmIprJUl2o8wOpB9oAdV3QP1OAkC7pG4bcTpyG7cDak0AUnraUweKp7jMIrfay0tFRisDxGB9pe7pH15sLkxAJz2i7nuicpneyuOl16c6lks5WW1iBSxsTG6TZxIKYg2OWoXY/qlJzbu1W3uVl36xe69X18Ze/Mmb2VOIbaLJyrLI58yCRAgoRwiAwhWSgZAi0jTIC9VQgztUalZH2f4/bXy/L2Q5vt4W1LfhmLbcO2EYv/41zfZ9rfXpRLRgxIzMT4pMS+YZ24H/ImJCDE1whqiBclWRVEKZnWBTULKY1dNa6DX1OM6z5F8cGcovkB5tCGz2DePC3jQyWiALr9fnQDTqzyMX/RxliReIlKWrCikBbVvHoWkpIsee1YVoi38165HnCrtDeaAJ+agFRaV+tB5CnM3Ru4dm3g3g9lNTdxI3PpUubGWlm9a4yLsizCHZTFfO4mfHQzl0dtzKJmqyczi8adxczJk5kPoLDY2Ykly5oMpiBHfD/FliDtz4OOYYRg+QUP6M8PdcJnbhyVAKTS/0N9OHYUK5rfbT0tgbPwE8RP8GaLeIKqeYYSkdNE10iUJ5zKi7KaTgFeHYQKqlkHJQbhQN3dBZXjjEe7u8Yj9vNBZ0MDe9BgkHc2ellF7wZUHfzeu/F4A4ro5v4Vfmz0/ujoffgEpguF6YMvCtPTFo5v2QPWRfzkJZIl/WTcZBLJimop5FJPJ5FAWRKRTzvPQpYSraWk5U5ZoYCmxaTZBDirEbRaTSFi3kY00yktTMlUYfhiKBwOXRwu3C2MXDDNCyOFqdF8//mgqgbP9+dX0GzAB03jK3A54GuHy+Uwuhwu2DS6Kt3uSlxxu402h9OJzgqnsyLzbL671i5sysqy8mxuYwZzgava5fK4RTeOuFNwuQTn0X3nFTyTKuLDfzH2NaxTKPNvXhy7Kli/K7aDzAjAcMeftGOI0qER3v/Hr+bLinSo/VDqGATU9HH70PJhMz1uzJZzX0ae3yNNyHEBzzqNrSAaNqXJKY4wvgJu2IrX1VRIadbsIHaJxxENmxjKi+g2P2g1CbdLIucBk/CkxD59AejrAzkBYHbitaaqcK7uu0AjQGOgKKt85upy88JbIPpsnsr3qyV/ZUbPn/14UGqeb9LcSncdY0nbj2qs1isdzkHgWAAHnIof75mhUf2NWXB+HozM1mIuowFzBmr4Hg7mx2t7IoHOnNrt6csA18XB2/YrL7acC7I+rW1Qh5YTLSDnd0QzV+Av/sRjbwAAAHicY2BkYGAA4pebjdfH89t8ZeBmYQCBG+bi4gj6fz2bJHMjkMvBwAQSBQAQ+wjUAHicY2BkYGBu+N/AEMMmwcDw/z+bJANQBAXwAQB2eASqeJxjYWBgYMGHmaEYymeTgNAAB/4AWQAAAAAAAAAYACYANABwAIgAwgDyAUABoAHkAmoCmAMaAAB4nGNgZGBg4GMIZ2BlAAEmIOYCQgaG/2A+AwAStgGBAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nG2LQQ6CMBRE/2ALBbWchAWcxQtU0dAE2qbtD/H2xuLSt5jJm2SoooOO/qNR4QQBiRoNFFp0OOOCKzR6kpt1nBoTo9856NKz393w8OEtXjY+RcomirBykt8Y6/IYi0wqL8auxs3HOqnbz9u88HZPAweiD2adI9U=') format('woff'),
+  url('iconfont.ttf?t=1544615447057') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1544615447057#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minus:before { content: "\e7de"; }
+
+.icon-arrowup:before { content: "\e60f"; }
+
+.icon-arrowdown-copy:before { content: "\e623"; }
+
+.icon-fire:before { content: "\e82d"; }
+
+.icon-star:before { content: "\e761"; }
+
+.icon-plus:before { content: "\e627"; }
+
+.icon-plus1:before { content: "\e61f"; }
+
+.icon-minus1:before { content: "\e90a"; }
+
+.icon-plus2:before { content: "\e92c"; }
+
+.icon-thailand:before { content: "\e655"; }
+
+.icon-minus2:before { content: "\e701"; }
+
+.icon-Thailand:before { content: "\ed47"; }
+
+.icon-thumbs-up:before { content: "\f2d8"; }
+
+

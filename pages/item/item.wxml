@@ -1,0 +1,23 @@
+<!--pages/menu/menu.wxml-->
+
+<view class= "container">
+  <block wx:for="{{items}}" wx:for-item="item" wx:for-index="ix">
+    <view class= "{{ix == activeCardId ? 'card-active' : 'card' }} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}">
+
+      <block wx:if="{{ix != activeCardId}}">
+        <view class= "menu-name">{{item.name}}</view>
+        <view class= "menu-price">{{item.price}}</view>
+      </block>
+
+      <block wx:elif="{{ix == activeCardId}}">
+        <view class= "menu-name-active">{{item.name}}</view>
+        <view class= "menu-price-active">{{item.price}}</view>
+        <view class= "menu-description">{{item.description}}</view>
+        <view class= "iconfont icon-minus2" catchtap= "minusOrder" data-id="{{ix}}"></view>
+        <view class= "menu-orderno">{{item.orderno}} </view>
+        <view class= "iconfont icon-plus" catchtap= "addOrder" data-id= "{{ix}}"></view>
+      </block>
+
+    </view>
+  </block>
+</view>
