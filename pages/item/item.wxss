@@ -10,9 +10,10 @@
   margin: 0 20rpx 20rpx 20rpx;
   border-left: 16rpx solid rgba(247, 168, 68, 0.6);
   padding-left: 40rpx;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
+  position: relative;
   height: 180rpx;
   color: #353535;
   font-size: 32rpx;
@@ -36,18 +37,39 @@
 .menu-price {
   padding: 0 40rpx;
   pointer-events: none;
+  position: absolute;
+  left: 430rpx;
+  top: 40rpx;
 }
 
 .menu-name {
   padding-right: 40rpx;
   pointer-events: none;
   font-size: 26rpx;
+  position: absolute;
+  bottom: 50rpx;
+  left: 50rpx;
+}
+
+.icon-arrowdown-copy {
+  position: absolute;
+  bottom: 20rpx;
+  right: 10rpx;
 }
 
 .menu-name-chinese {
   padding-right: 40rpx;
   pointer-events: none;
   font-size: 36rpx;
+  position: absolute;
+  top: 40rpx;
+  left: 50rpx;
+}
+
+.menu-orderno-main {
+  position: absolute;
+  top:40rpx;
+  right: 30rpx;
 }
 
 .menu-price-active {
