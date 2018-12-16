@@ -17,11 +17,14 @@
       <block wx:elif="{{ix == activeCardId}}">
         <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
         <view class= "menu-name-active">{{item.name}}</view>
-        <view class= "menu-price-active">{{item.price}}</view>
+        <view class= "menu-price-active">{{item.price}}元/个</view>
         <view class= "menu-description">{{item.description}}</view>
+        <view class= "add-minus-order">
         <view class= "iconfont icon-minus2" catchtap= "minusOrder" data-id="{{ix}}"></view>
         <view class= "menu-orderno">{{item.orderno}} </view>
         <view class= "iconfont icon-plus" catchtap= "addOrder" data-id= "{{ix}}"></view>
+        </view>
+        <view class= "iconfont .icon-arrowup"></view>        
       </block>
 
     </view>
