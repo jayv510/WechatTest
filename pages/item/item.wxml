@@ -18,6 +18,9 @@
         <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
         <view class= "menu-name-active">{{item.name}}</view>
         <view class= "menu-price-active">{{item.price}}元/个</view>
+        <view class= "menu-image"></view>
+        <view class= "line-card"></view>
+        <view class= "iconfont icon-dot"></view>
         <view class= "menu-description">{{item.description}}</view>
         <view class= "add-minus-order">
         <view class= "iconfont icon-minus2" catchtap= "minusOrder" data-id="{{ix}}"></view>

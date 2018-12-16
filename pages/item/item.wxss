@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-between; */
   position: relative;
-  height: 760rpx;
+  height: 1000rpx;
   color: #353535;
   font-size: 32rpx;
   transition-duration: 0.2s;
@@ -107,7 +107,7 @@
   padding-bottom: 20rpx;
   font-size: 24rpx;
   position: absolute;
-  top: 480rpx;
+  top: 720rpx;
   overflow: scroll;
   height: 150rpx;
   border-bottom: 0.5px dotted rgba(220,220,220,0.8);
@@ -165,4 +165,31 @@
   bottom: 20rpx;
   right: 10rpx;
   pointer-events: none;
+}
+
+/* .line-card {
+  margin: 0rpx;
+  width: 155rpx;
+  border-bottom: 0.8rpx solid rgba(210,210,210,1);
+  position: absolute;
+  top: 330rpx;
+} */
+
+.icon-dot {
+  position: absolute;
+  top: 650rpx;
+  padding: 20px 0;
+  color: rgba(120,120,120,1);
+}
+
+.menu-image {
+  background-image: url("https://i0.wp.com/anngle.org/th/wp-content/uploads/2016/06/%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2-18.jpg?fit=1350%2C900&ssl=1");
+  height: 510rpx;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 180rpx;
+  left: 0rpx;
 }
