@@ -30,7 +30,7 @@
         <view class= "menu-price">¥ {{item.price}}</view>
         </block>
 
-        <view class= "menu-image"></view>
+        <view class= "menu-image" style="background-image: url({{item.photoUrl}});"></view>
         <view class= "line-card"></view>
         <view class= "iconfont icon-dot"></view>
         <view class= "menu-description">{{item.description}}</view>

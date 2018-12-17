@@ -12,7 +12,8 @@ Page({
         nameChinese: '泰式炒河粉',
         price: '8',
         description: '作为与世界各地美食齐名的泰国招牌菜，泰式炒河粉无需多述。这道经典老菜有数不尽的做法变化，但一般都是河粉搭配豆腐、豆芽、洋葱和必不可缺的一位配料：几乎磨成粉末的花生。泰式炒河粉需要就餐者自行调味：依照自身口味适量添加鱼露、糖、辣椒粉和花生碎。',
-        orderno: 0
+        orderno: 0,
+        photoUrl: 'https://res.cloudinary.com/dhabtcsqh/image/upload/v1545056476/E0_B8_9C_E0_B8_B1_E0_B8_94_E0_B9_84_E0_B8_97_E0_B8_A2-18.jpg'
       },
       {
         name: 'Tom Yum Goong',
