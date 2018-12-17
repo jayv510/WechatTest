@@ -7,9 +7,13 @@
       <block wx:if="{{ix != activeCardId}}">
         <view class= "menu-name-chinese">{{item.nameChinese}}</view>
         <view class= "menu-name">{{item.name}}</view>
-        <view class= "menu-price">{{item.price}}元/个</view>
         <block wx:if= "{{item.orderno != 0}}">
+        <view class= "menu-price green-number">¥ {{item.price*item.orderno}}</view>        
         <view class= "menu-orderno-main">{{item.orderno}} </view>
+        <!-- <view class= "iconfont icon-tag"></view>         -->
+        </block>
+        <block wx:elif= "{{item.orderno == 0}}">
+        <view class= "menu-price">¥ {{item.price}}</view>
         </block>
         <view class= "iconfont icon-arrowdown-copy"></view>
       </block>
@@ -17,7 +21,15 @@
       <block wx:elif="{{ix == activeCardId}}">
         <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
         <view class= "menu-name-active">{{item.name}}</view>
-        <view class= "menu-price-active">{{item.price}}元/个</view>
+
+        <block wx:if= "{{item.orderno != 0}}">
+        <view class= "menu-price-active green-number">¥ {{item.price*item.orderno}}</view>
+        <view class= "iconfont icon-tag"></view> 
+        </block>
+        <block wx:elif= "{{item.orderno == 0}}">
+        <view class= "menu-price">¥ {{item.price}}</view>
+        </block>
+
         <view class= "menu-image"></view>
         <view class= "line-card"></view>
         <view class= "iconfont icon-dot"></view>

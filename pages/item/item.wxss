@@ -39,8 +39,23 @@
   padding: 0 40rpx;
   pointer-events: none;
   position: absolute;
-  left: 430rpx;
+  left: 440rpx;
   top: 40rpx;
+
+}
+
+.green-number {
+  color: rgb(63, 145, 95);
+}
+
+.icon-tag {
+  padding: 0 40rpx;
+  pointer-events: none;
+  position: absolute;
+  left: 440rpx;
+  top: 100rpx;
+  font-size: 50rpx;
+  color: rgba(81, 187, 123, 0.8);
 }
 
 .menu-name {
@@ -79,7 +94,7 @@
   padding: 0 40rpx;
   pointer-events: none;
   position: absolute;
-  left: 430rpx;
+  left: 440rpx;
   top: 40rpx;
 }
 
@@ -185,7 +200,8 @@
 .menu-image {
   background-image: url("https://i0.wp.com/anngle.org/th/wp-content/uploads/2016/06/%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B9%84%E0%B8%97%E0%B8%A2-18.jpg?fit=1350%2C900&ssl=1");
   height: 510rpx;
-  width: 100vw;
+  width: calc(100vw - 40rpx);
+  overflow-x: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
