@@ -208,3 +208,7 @@
   top: 180rpx;
   left: 0rpx;
 }
+
+.card-active .shrink-card-photo {
+  color:red ;
+}

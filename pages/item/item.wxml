@@ -2,7 +2,10 @@
 
 <view class= "container">
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="ix">
+
     <view class= "{{ix == activeCardId ? 'card-active' : 'card' }} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}">
+
+    <!-- {{item.photoUrl == null ? 'shrink-card-photo':''}} -->
 
       <block wx:if="{{ix != activeCardId}}">
         <view class= "menu-name-chinese">{{item.nameChinese}}</view>
@@ -18,28 +21,29 @@
         <view class= "iconfont icon-arrowdown-copy"></view>
       </block>
 
+      <!-- After clicking on a card -->
       <block wx:elif="{{ix == activeCardId}}">
-        <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
-        <view class= "menu-name-active">{{item.name}}</view>
+          <view class= "menu-name-chinese-active">{{item.nameChinese}}</view>
+          <view class= "menu-name-active">{{item.name}}</view>
 
-        <block wx:if= "{{item.orderno != 0}}">
-        <view class= "menu-price-active green-number">¥ {{item.price*item.orderno}}</view>
-        <view class= "iconfont icon-tag"></view> 
-        </block>
-        <block wx:elif= "{{item.orderno == 0}}">
-        <view class= "menu-price">¥ {{item.price}}</view>
-        </block>
+          <block wx:if= "{{item.orderno != 0}}">
+          <view class= "menu-price-active green-number">¥ {{item.price*item.orderno}}</view>
+          <view class= "iconfont icon-tag"></view> 
+          </block>
+          <block wx:elif= "{{item.orderno == 0}}">
+          <view class= "menu-price">¥ {{item.price}}</view>
+          </block>
 
-        <view class= "menu-image" style="background-image: url({{item.photoUrl}});"></view>
-        <view class= "line-card"></view>
-        <view class= "iconfont icon-dot"></view>
-        <view class= "menu-description">{{item.description}}</view>
-        <view class= "add-minus-order">
-        <view class= "iconfont icon-minus2" catchtap= "minusOrder" data-id="{{ix}}"></view>
-        <view class= "menu-orderno">{{item.orderno}} </view>
-        <view class= "iconfont icon-plus" catchtap= "addOrder" data-id= "{{ix}}"></view>
-        </view>
-        <view class= "iconfont .icon-arrowup"></view>        
+          <view class= "menu-image" style="background-image: url({{item.photoUrl}});"></view>
+          <view class= "line-card"></view>
+          <view class= "iconfont icon-dot"></view>
+          <view class= "menu-description">{{item.description}}</view>
+          <view class= "add-minus-order">
+          <view class= "iconfont icon-minus2" catchtap= "minusOrder" data-id="{{ix}}"></view>
+          <view class= "menu-orderno">{{item.orderno}} </view>
+          <view class= "iconfont icon-plus" catchtap= "addOrder" data-id= "{{ix}}"></view>
+          </view>
+          <view class= "iconfont .icon-arrowup"></view>      
       </block>
 
     </view>
