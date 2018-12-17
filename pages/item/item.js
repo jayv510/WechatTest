@@ -18,7 +18,7 @@ Page({
       {
         name: 'Tom Yum Goong',
         nameChinese: '冬阴功汤',
-        price: '9',
+        price: '28',
         description: '这是泰国家喻户晓的美味，以大量香草调味烹煮。柠檬草、青柠叶和葱姜散发迷人芳香，而辣椒和鱼露迸发刺激口感。食材有大虾（功）和蘑菇。口味是一种独特的酸辣味，特别适合餐前开胃，如果与米饭搭配，也是一道不错的主菜。',
         orderno: 0,
         photoUrl: 'https://res.cloudinary.com/dhabtcsqh/image/upload/v1545064471/tom-ym1.jpg'
