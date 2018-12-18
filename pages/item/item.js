@@ -79,7 +79,9 @@ Page({
         description: 'Shrimp Rice Noodles',
         orderno: 0
       },
-    ]
+    ],
+    
+    subtotal: 0  
   },
 
   /**
@@ -195,7 +197,5 @@ Page({
       this.setData({
         [key]: orderno + 1
       })
-
   },
-  
 })

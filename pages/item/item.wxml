@@ -45,7 +45,9 @@
           </view>
           <view class= "iconfont .icon-arrowup"></view>      
       </block>
-
     </view>
   </block>
+
+    <view> {{subtotal}} </view>
+
 </view>
