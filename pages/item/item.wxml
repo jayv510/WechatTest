@@ -11,12 +11,12 @@
         <view class= "menu-name-chinese">{{item.nameChinese}}</view>
         <view class= "menu-name">{{item.name}}</view>
         <block wx:if= "{{item.orderno != 0}}">
-        <view class= "menu-price green-number">¥ {{item.price*item.orderno}}</view>        
-        <view class= "menu-orderno-main">{{item.orderno}} </view>
-        <!-- <view class= "iconfont icon-tag"></view>         -->
+          <view class= "menu-price green-number">¥ {{item.price*item.orderno}}</view>        
+          <view class= "menu-orderno-main">{{item.orderno}} </view>
+          <!-- <view class= "iconfont icon-tag"></view>         -->
         </block>
         <block wx:elif= "{{item.orderno == 0}}">
-        <view class= "menu-price">¥ {{item.price}}</view>
+          <view class= "menu-price">¥ {{item.price}}</view>
         </block>
         <view class= "iconfont icon-arrowdown-copy"></view>
       </block>
@@ -27,11 +27,11 @@
           <view class= "menu-name-active">{{item.name}}</view>
 
           <block wx:if= "{{item.orderno != 0}}">
-          <view class= "menu-price-active green-number">¥ {{item.price*item.orderno}}</view>
-          <view class= "iconfont icon-tag"></view> 
+            <view class= "menu-price-active green-number">¥ {{item.price*item.orderno}}</view>
+            <view class= "iconfont icon-tag"></view> 
           </block>
           <block wx:elif= "{{item.orderno == 0}}">
-          <view class= "menu-price">¥ {{item.price}}</view>
+            <view class= "menu-price">¥ {{item.price}}</view>
           </block>
 
           <view class= "menu-image" style="background-image: url({{item.photoUrl}});"></view>
@@ -48,6 +48,16 @@
     </view>
   </block>
 
-    <view> {{subtotal}} </view>
-
+  <!-- Payment section -->
+    <view class= "box">
+      <view class= "iconfont .icon-cart"></view>
+      <view class= "subtotal"> Subtotal: </view>
+      <view class= "subtotal-number">¥ {{subtotal}} </view>
+      <view class= "service-fee"> Service Fee (6.9%): </view>
+      <view class= "service-fee-number">¥ {{subtotal*0.069}} </view>
+      <view class= "total">
+        <view class= "total-text"> Total: </view>
+        <view class= "total-number">¥ {{subtotal+(subtotal*0.069)}} </view>
+      </view>
+    </view>
 </view>

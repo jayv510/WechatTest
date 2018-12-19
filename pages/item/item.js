@@ -57,26 +57,15 @@ Page({
       },
       {
         name: 'Coke',
+        nameChinese: '可乐',
         price: '2',
-        description: 'Shrimp Rice Noodles',
+        description: '330ml',
         orderno: 0
       },
       {
         name: 'Pepsi',
+        nameChinese: '百事可乐',
         price: '2',
-        description: 'Shrimp Rice Noodles',
-        orderno: 0
-      },
-      {
-        name: 'Sprite',
-        price: '2',
-        description: 'Shrimp Rice Noodles',
-        orderno: 0
-      },
-      {
-        name: 'Orange Juice',
-        price: '2',
-        description: 'Shrimp Rice Noodles',
         orderno: 0
       },
     ],
