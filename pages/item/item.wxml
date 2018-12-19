@@ -1,5 +1,13 @@
 <!--pages/menu/menu.wxml-->
 
+            <view class="banner" style= "background-image: linear-gradient(-225deg, rgba(247,168,68,0.3) 0%, rgba(0,0,0,0.3) 50%), url({{bannerUrl}})"></view>
+            <view class="avatar" style= "background-image: url({{avatarUrl}})"></view>
+            <view class="avatar-text">
+              <h2>{{vendorName}}</h2>
+              <p>{{vendorAddress}}</p>
+            </view>
+
+
 <view class= "container">
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="ix">
 

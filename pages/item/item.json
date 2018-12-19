@@ -1,7 +1,7 @@
 {
-  "navigationBarBackgroundColor": "#ffffff",
-  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#303030",
+  "navigationBarTextStyle": "White",
   "navigationBarTitleText": "Menu",
   "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "Light"
 }

@@ -1,6 +1,53 @@
-/* pages/menu/menu.wxss */
+.banner{
+  opacity: 1;
+  text-align: center;
+  height: 15vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  margin-bottom: -220rpx;
+}
+
+.title-banner p {
+  text-align: center;
+}
+
+.avatar
+{
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 230rpx;
+    width: 230rpx;
+    background-color: white;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    top: 40rpx;
+    box-shadow: 0px 0px 6rpx 2rpx rgba(0,0,0,0.3);
+    border: 6rpx solid white;
+}
+
+.avatar-text {
+  color: #353535;
+  padding-top: 60rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.avatar-text p {
+  color: rgb(87,107,149);
+  font-size: 24rpx;
+}
+
 .container {
   display: flex;
+  margin-top: 100rpx;
   margin: 0px;
   padding: 0;
   flex-direction: column;
@@ -14,7 +61,7 @@
   align-items: center;
   justify-content: space-between; */
   position: relative;
-  height: 180rpx;
+  height: 140rpx;
   color: #353535;
   font-size: 32rpx;
   transition-duration: 0.2s;
@@ -29,7 +76,7 @@
   align-items: center;
   justify-content: space-between; */
   position: relative;
-  height: 1000rpx;
+  height: 980rpx;
   color: #353535;
   font-size: 32rpx;
   transition-duration: 0.2s;
@@ -40,7 +87,7 @@
   pointer-events: none;
   position: absolute;
   left: 440rpx;
-  top: 40rpx;
+  top: 20rpx;
 
 }
 
@@ -53,7 +100,7 @@
   pointer-events: none;
   position: absolute;
   left: 440rpx;
-  top: 100rpx;
+  top: 80rpx;
   font-size: 50rpx;
   color: rgba(81, 187, 123, 0.8);
 }
@@ -63,13 +110,13 @@
   pointer-events: none;
   font-size: 24rpx;
   position: absolute;
-  top: 94rpx;
+  top: 74rpx;
   left: 50rpx;
 }
 
 .icon-arrowdown-copy {
   position: absolute;
-  bottom: 20rpx;
+  bottom: 10rpx;
   right: 10rpx;
   pointer-events: none;
 }
@@ -79,7 +126,7 @@
   pointer-events: none;
   font-size: 36rpx;
   position: absolute;
-  top: 40rpx;
+  top: 20rpx;
   left: 50rpx;
 }
 
@@ -95,7 +142,7 @@
   pointer-events: none;
   position: absolute;
   left: 440rpx;
-  top: 40rpx;
+  top: 20rpx;
 }
 
 .menu-name-active {
@@ -103,7 +150,7 @@
   pointer-events: none;
   font-size: 24rpx;
   position: absolute;
-  top: 94rpx;
+  top: 74rpx;
   left: 50rpx;
 }
 
@@ -112,7 +159,7 @@
   pointer-events: none;
   font-size: 36rpx;
   position: absolute;
-  top: 40rpx;
+  top: 20rpx;
   left: 50rpx;
 }
 
@@ -122,7 +169,7 @@
   padding-bottom: 20rpx;
   font-size: 24rpx;
   position: absolute;
-  top: 720rpx;
+  top: 700rpx;
   overflow: scroll;
   height: 150rpx;
   border-bottom: 0.5px dotted rgba(220,220,220,0.8);
@@ -167,6 +214,8 @@
   height: 40rpx;
   text-align: center;
   font: 32rpx Arial, sans-serif;
+  position: absolute;
+  top: 20rpx;
 }
 
 /* .add-minus-order {
@@ -177,7 +226,7 @@
 
 .icon-arrowup {
   position: absolute;
-  bottom: 20rpx;
+  bottom: 10rpx;
   right: 10rpx;
   pointer-events: none;
 }
@@ -192,7 +241,7 @@
 
 .icon-dot {
   position: absolute;
-  top: 650rpx;
+  top: 630rpx;
   padding: 20px 0;
   color: rgba(120,120,120,1);
 }
@@ -205,7 +254,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 180rpx;
+  top: 160rpx;
   left: 0rpx;
 }
 
@@ -220,6 +269,7 @@
   font-size: 30rpx;
   position: relative;
   height: 500rpx;
+  color: #353535;
 }
 
 .icon-cart {
