@@ -59,5 +59,9 @@
         <view class= "total-text"> Total: </view>
         <view class= "total-number">¥ {{subtotal+(subtotal*0.069)}} </view>
       </view>
+
+      <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="confirmPayment"> Pay with Wechat Wallet </button>
+      
     </view>
 </view>

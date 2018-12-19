@@ -233,6 +233,7 @@
   margin: 10rpx 0;
   margin-top: 100rpx;
   margin-left: 40rpx;
+  margin-bottom: 40rpx;
   padding: 20rpx 0;
   border-top: 1rpx solid rgba(220,220,220,0.8);
   border-bottom: 1rpx solid rgba(220,220,220,0.8);

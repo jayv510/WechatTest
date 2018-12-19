@@ -187,4 +187,24 @@ Page({
         [key]: orderno + 1
       })
   },
+
+  confirmPayment: function () {
+    wx.showModal({
+    title: 'Payment',
+    content: 'Make the payment?',
+    success: function (res) {
+      if (res.confirm) {
+        wx.showToast({
+          title: 'Success',
+          icon: 'success',
+          duration: 2000
+        })
+        console.log('User clicked on Confirm')
+      } else if (res.cancel) {
+        console.log('User clicked on Cancel')
+      }
+    }
+  })
+  },
+
 })
