@@ -8,7 +8,7 @@ Page({
     bannerUrl: 'https://images.unsplash.com/photo-1441850605338-1b0b5a22e7b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
     avatarUrl: 'http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/chinatown/pagePropertiesImage/chinatown-bangkok.jpg.jpg',
     vendorName: 'LookChit Restaurant',
-    vendorAddress: '123 Yaowarad',
+    vendorAddress: '123 Yaowarad Road, Bangkok',
     activeCardId: -1,
     items: [
       {

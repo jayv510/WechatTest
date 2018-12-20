@@ -33,6 +33,7 @@
 .avatar-text {
   color: #353535;
   padding-top: 60rpx;
+  padding-bottom: 5rpx;
   font-size: 30rpx;
   display: flex;
   flex-direction: column;
@@ -112,6 +113,7 @@
   position: absolute;
   top: 74rpx;
   left: 50rpx;
+  width: 400rpx;
 }
 
 .icon-arrowdown-copy {
@@ -128,6 +130,7 @@
   position: absolute;
   top: 20rpx;
   left: 50rpx;
+  width: 400rpx;
 }
 
 .menu-orderno-main {
@@ -152,6 +155,7 @@
   position: absolute;
   top: 74rpx;
   left: 50rpx;
+  width: 400rpx;
 }
 
 .menu-name-chinese-active {
@@ -161,6 +165,7 @@
   position: absolute;
   top: 20rpx;
   left: 50rpx;
+  width: 400rpx;
 }
 
 .menu-description {
@@ -169,8 +174,9 @@
   padding-bottom: 20rpx;
   font-size: 24rpx;
   position: absolute;
-  top: 700rpx;
-  overflow: scroll;
+  /* top: 700rpx; */
+  bottom: 110rpx;
+  overflow: auto;
   height: 150rpx;
   border-bottom: 0.5px dotted rgba(220,220,220,0.8);
   width: 590rpx;
@@ -241,7 +247,8 @@
 
 .icon-dot {
   position: absolute;
-  top: 630rpx;
+  /* top: 630rpx; */
+  bottom: 234rpx;
   padding: 20px 0;
   color: rgba(120,120,120,1);
 }
@@ -256,10 +263,6 @@
   position: absolute;
   top: 160rpx;
   left: 0rpx;
-}
-
-.card-active .shrink-card-photo {
-  color:red ;
 }
 
 .box {
@@ -328,4 +331,8 @@
   position: absolute;
   top: 20rpx;
   left: 380rpx;
+}
+
+.shrink-card-photo {
+  height: 470rpx;
 }

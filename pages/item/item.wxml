@@ -11,7 +11,10 @@
 <view class= "container">
   <block wx:for="{{items}}" wx:for-item="item" wx:for-index="ix">
 
-    <view class= "{{ix == activeCardId ? 'card-active' : 'card' }} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}">
+
+    <view class= "{{ (ix == activeCardId)? (item.photoUrl == null ? 'card-active shrink-card-photo':'card-active' ) :  ('card')}} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}">
+
+    <!-- <view class= "{{ix == activeCardId ? 'card-active' : 'card' }} {{item.orderno != 0 ? 'green-border': ''}}" data-id="{{ix}}" bindtap="{{ ix == activeCardId ? 'closeCard' : 'clickedCard' }}"> -->
 
     <!-- {{item.photoUrl == null ? 'shrink-card-photo':''}} -->
 
